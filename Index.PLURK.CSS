@@ -1,0 +1,2160 @@
+body {
+font-family: monospace, vernanda;
+font-size: 19px;
+padding: 5px 15px 5pt 5pt;
+fon-color: #FFFFFF;
+}
+/*轉噗內文模糊*/
+.text_holder .text_holder {
+	/*模糊程度(數字越大越模糊)*/ filter:blur(10px);
+}
+.display .text_holder .text_holder { filter:unset; }
+}
+/*======票數統計條======*/
+
+/*票數統計條顏色*/
+.poll-candidate {
+	/*框線*/ border-color:#181818;
+	/*字色*/ color:#A9A9A9;
+	/*字色包含：左側勾勾、選項文字、票數*/
+}
+.poll-candidate .candidate-background {
+	/*佔比背景色*/ background: rgba(255,255,255,0.3);
+	/*文字底下百分比越高越長那個背景色*/
+}
+
+/*票數統計條顏色：最高票*/
+.poll-candidate.active {
+	/*框線*/ border-color:#181818;
+	/*字色*/ color:#A9A9A9;
+	/*字色包含：左側勾勾、選項文字、票數*/
+}
+.poll-candidate.active .candidate-background {
+	/*佔比背景色*/ background: rgba(0,0,0,0.7);
+	/*文字底下百分比越高越長那個背景色*/
+}
+
+/*票數統計條顏色：已投的項目*/
+.poll-candidate.voted {
+	/*框線*/ border-color:#181818;
+	/*字色*/ color:#A9A9A9;
+	/*字色包含：左側勾勾、選項文字、票數*/
+}
+.poll-candidate.voted .candidate-background {
+	/*佔比背景色*/ background: rgba(255,255,255,0.9);
+	/*文字底下百分比越高越長那個背景色*/
+}
+
+
+/*======票數數字======*/
+
+/*投票：數字顏色*/
+.poll-candidate .candidate-count { color:#101010; }
+
+/*投票：最高票數字顏色*/
+.poll-candidate.active .candidate-count { color:#282828; }
+
+/*投票：已投票數字顏色*/
+.poll-candidate.voted .candidate-count { color: #000000; }
+
+
+/*======百分比數字======*/
+
+/*投票：百分比數字顏色*/
+.poll-candidate + .candidate-percentage { color:#101010; }
+
+/*投票：最高票百分比數字顏色*/
+.poll-candidate.active + .candidate-percentage { color:#282828; }
+
+/*投票：已投票百分比數字顏色*/
+.poll-candidate.voted + .candidate-percentage { color:#000000; }
+
+
+/*======其他======*/
+
+/*投票：勾勾顏色*/
+.voted-mark { color:#000000; }
+
+/*投票按鈕：一般狀態*/
+.plurk-poll--buttons button {
+	/*邊線顏色*/ box-shadow:inset 0 0 0 1px rgba(255,255,255,0.5);
+	/*字色*/ color:#000000;
+	/*底色*/ background:#FFFFFF;
+}
+/*投票按鈕：指上狀態*/
+.plurk-poll--buttons button:hover {
+	/*邊線顏色*/ box-shadow:inset 0 0 0 1px rgba(255,255,255,0.7);
+	/*字色*/ color:	#E0E0E0;
+	/*底色*/ background: #FFFFFF;
+}
+/*投票按鈕：按下狀態*/
+.plurk-poll--buttons button:active {
+	/*邊線顏色*/ box-shadow:inset 0 0 0 1px #AFA;
+	/*字色*/ color:#AFA;
+	/*底色*/ background:#f6f6f6;
+}
+/*投票按鈕：不可按狀態*/
+.plurk-poll--buttons button:disabled {
+	/*邊線顏色*/ box-shadow:inset 0 0 0 1px rgba(255,255,255,0.7);
+	/*字色*/ color:#E0E0E0;
+	/*底色*/ background:#FFFFFF;
+}
+/*投票按鈕：顯示狀態的按鈕（投票成功、投票已收回、修改成功）*/
+.plurk-poll--buttons button.show {
+	/*邊線顏色*/ box-shadow:inset 0 0 0 1px rgba(255,255,255,0.7);
+	/*字色*/ color:#E0E0E0;
+	/*底色*/ background:#FFFFFF;
+}
+/*隱藏時間線，不可刪*/
+.bottom-line {height: 0px;}
+/*隱藏時間標記，不可刪*/
+.timeline-bg .block_bg .bottom_start, .timeline-timeshow {opacity: 0;}
+}
+/*喜歡按鈕(未點選狀態)*/
+._lc_ .manager .like-off{
+content: url(https://images.plurk.com/5kms0RQOpDgrDT7XRyE1WJ.gif);
+}
+/*喜歡按鈕(滑鼠移至)*/
+._lc_ .manager .like-off:hover{
+content: url(https://images.plurk.com/4Mkz7u6qHlqX2wOJumXqMH.gif);
+}
+/*喜歡按鈕(已點選狀態)*/
+._lc_ .manager .like-on{
+content: url(https://images.plurk.com/4Mkz7u6qHlqX2wOJumXqMH.gif);
+}
+
+/*轉噗按鈕(未點選狀態)*/
+._lc_ .manager .replurk-off{
+content: url(https://images.plurk.com/76II1Qdckf89Nck0xHm3sz.gif );
+}
+/*轉噗按鈕(滑鼠移至)*/
+._lc_ .manager .replurk-off:hover{
+content: url(https://images.plurk.com/4CAh0pnlzJE9Ql488m5vPf.gif);
+}
+/*轉噗按鈕(已點選狀態)*/
+._lc_ .manager .replurk-on{
+content: url(https://images.plurk.com/4CAh0pnlzJE9Ql488m5vPf.gif );
+}
+
+/*消音按鈕(未點選狀態)*/
+._lc_ .manager .mute-off{
+content: url(https://images.plurk.com/4AVmmibewkD5yQu0YcqBZ7.gif);
+}
+/*消音按鈕(滑鼠移至)*/
+._lc_ .manager .mute-off:hover{
+content: url(https://images.plurk.com/22ipv5rNr14ywGmIDUFq0K.gif );
+}
+/*消音按鈕(已點選狀態)*/
+._lc_ .manager .mute-on{
+content: url(https://images.plurk.com/22ipv5rNr14ywGmIDUFq0K.gif );
+}
+
+
+/*書籤按鈕(未點選狀態)*/
+._lc_ .manager .mark-off{
+content: url(https://images.plurk.com/7rvoFg2svJgnT45lKrhyGu.gif);
+}
+/*書籤按鈕(滑鼠移至)*/
+._lc_ .manager .mark-off:hover{
+content: url(https://images.plurk.com/6NdPilkCLwttzyJHIio6Jg.gif );
+}
+/*書籤按鈕(已點選狀態)*/
+._lc_ .manager .mark-on{
+content: url(https://images.plurk.com/6NdPilkCLwttzyJHIio6Jg.gif );
+}
+
+/*噗幣按鈕*/
+._lc_ .manager >a.gift{
+content: url(https://images.plurk.com/7efZ3IdZDXOh0zuAbhW2pk.gif );
+}
+/*噗幣按鈕(滑鼠移至)*/
+._lc_ .manager >a.gift:hover{
+content: url(https://images.plurk.com/7efZ3IdZDXOh0zuAbhW2pk.gif );
+}
+/*噗首按鈕往左展開*/
+.timeline-cnt .plurk .manager { display:block; margin-right: 3px; transition:margin-right .6s; }
+.timeline-cnt .display .manager { margin-right:-5px; }
+.manager > a { position:relative; margin-left:-46px; transition:margin-left .6s; }
+.display .manager > a { margin-left:20px; }
+.manager span { display:none; }
+.display .manager span { display:inline-block; }
+
+/*噗首按鈕收起時遮住的小圖*/
+
+.manager:before {
+/*這行不動*/ position:absolute; z-index:1;
+/*圖片*/ content:url(https://images.plurk.com/3Mf4D7E8aV1DbpxiTP7pja.gif);
+/*位置*/ bottom:-55px; right:-10px;
+}
+
+.dash-segment-post:before {
+/*這行不用動*/ display:block; position:absolute;
+/*擋住輸入框*/ z-index:1; /*改成1擋住，改成0不擋住，刪除這行不擋住*/
+/*上下位置*/ bottom:-55px; /*可改top*/
+/*左右位置*/ left:0px; /*可改left*/
+/*大小*/ width:auto; /*auto改想要的大小，可改height，不須調大小的話可以刪除這行*/
+/*圖片*/ content:url(https://images.plurk.com/3Mf4D7E8aV1DbpxiTP7pja.gif);
+}
+/*時間線-第二個噗寶*/
+.timeline-bg {
+background-image:url(https://images.plurk.com/1L8rAhuUaVeX6vuekXM1by.gif);
+background-repeat:no-repeat;/*防止圖重複*/
+margin-top: 85px; /*生物距離頂部的位置*/
+margin-left: 40px; /*生物的左右位置 ( px > 0 時會往左邊，px < 0 時會往右邊)*/}
+}
+.dash-segment-post:before {  
+	/*這行不用動*/ display:block; position:absolute;
+	/*擋住輸入框*/ z-index:0; /*改成1擋住，改成0不擋住，刪除這行不擋住*/
+	/*上下位置*/ bottom:0px; /*可改top*/
+	/*左右位置*/ right:20px; /*可改left*/
+	/*大小*/ width:auto; /*auto改想要的大小，可改height，不須調大小的話可以刪除這行*/
+	/*圖片*/ content:url(https://images.plurk.com/vVPJvxBCYZzNkPQzreNEq.gif);
+}
+/* 雙圖 轉噗上出現圖案 */
+
+/*右方趴趴*/
+
+.q_replurks::before{
+content:"";
+position: absolute;
+width:48px;
+height:48px;
+right: 24px; /*自行調整位置*/
+top: 12px;
+background-image:url(https://emos.plurk.com/bb6824f320c78d3f42599e0acbe7df6a_w30_h48.gif); /*趴趴圖網址*/
+z-index:100;
+background-size:contain;
+background-repeat: no-repeat;
+}
+/*左方趴趴*/
+
+.q_replurks::after{
+content:"";
+position: absolute;
+width:45px;
+height:35px;
+left: 100px; /*自行調整位置*/
+top:-35px;
+background-image:url(https://images.plurk.com/36gL5LgGiEP60RLC1DmTYk.gif); /*趴趴圖網址*/
+z-index:100;
+background-size:contain;
+background-repeat: no-repeat;
+}
+#dash-profile:before {
+content:""; position:fixed; z-index:9999;
+opacity:0; background-size:cover; bottom:100vh;
+transition:opacity 0.6s, bottom 0s 0.6s, background-image 0s 0.6s;
+/*大小*/ height:150px; width:150px;
+/*距離左邊位置*/ left:50px; /*可換成right變成距離右邊的位置*/
+/*圖片*/ background-image:url(https://images.plurk.com/qZlE2RArhbrj7eMGyfida.png);
+}
+
+#dash-profile:hover:before {
+transition:opacity 0s, bottom 0.8s linear, background-image 0.3s 0.8s;
+opacity:1;
+/*摔下來後距離底下的位置*/ bottom:20px;
+/*圖片*/ background-image:url(https://images.plurk.com/3uOkPutrjYEFRjX2PG1bga.png);
+}
+/*Heart on Liked Plurks*/
+.manager .like-on {color:#000000 !important;}
+.manager .like-off:hover {background:rgb(255,255,255,0.4) !important;}
+}
+/*Lock on Private Plurks*/
+.plurk_icon.private{color:#000000 !important}
+}
+/*The label icon in front of each pop*/
+.plurk_icon { color: #000000 !important; }
+}
+/*下雪特效改全畫面*/
+#snow_canvas { height:100vh; width:100vw; position:fixed; top:0; left:0; z-index:-1; }
+
+/*   底部設定   */
+
+/*底部連結*/
+#footer {
+  display: none !important; }
+  padding: 0;
+  position: fixed;
+  bottom: 0px;
+  right: 10px;
+  height: 30px;
+  width: auto;
+  font-size: 1px;
+}
+#footer .copyright {
+  display: none;
+}
+/*更換 噗浪生物*/
+#dynamic_logo{
+height: 300px; /*請依照您的生物調整到適當高度*/
+width: 480px; /*請依照您的生物調整到適當寬度*/
+margin-top: 300px; /*生物距離頂部的位置*/
+margin-right: 97px; /*生物的左右位置 ( px > 0 時會往左邊，px < 0 時會往右邊)*/
+background-repeat: no-repeat; /*防止背景重複*/
+/*接著，請將以下圖片網址改成你想放的生物*/
+background-image: url(https://images.plurk.com/4OU9TT1T6uUDEo1tkP2mvH.gif);
+}
+/*-- Usernames --*/
+.td_qual span a, .td_qual span a:hover, #timeline_cnt .name,
+a.user-nick, a.user-nick:hover {
+color: #000000!important;
+}
+#plurk-dashboard {
+font-color:#000000;
+border-radius:100px:
+background-color:#0070ff;
+}
+/*偷偷說噗首名字置換成小圖片*/
+.timeline-holder .plurk[data-uid="99999"] .name { content:url(https://avatars.plurk.com/99999-small30575739.gif); }
+}
+/* 謝林趴趴回應數 ver.2.0 */
+
+.cboxAnchor[data-type="plurk"]>table{
+position: relative;
+}
+.cboxAnchor[data-type="plurk"]>table::before{
+content:"";
+color:red;
+position: absolute;
+width:70px;
+height:46px;
+right: 50px;
+top:-42px;
+background-image:url(https://emos.plurk.com/6535b0d080ba1a67d480bc6a1be1f8d9_w48_h48.gif); /*可替換圖片*/
+z-index:100;
+background-size:contain;
+background-repeat: no-repeat;
+}
+.timeline-cnt{
+position:relative;
+margin-top: 30px;  /* 增加數字避免讓最上面的趴趴撞到上面的bar */
+}
+
+/* 已讀氣泡框 */
+
+.response_count{
+position: relative;
+top:-52px;
+left:-40px;
+border:5px solid transparent;
+border-radius:30px;
+background-color:rgba(255,255,255,);
+font-size: 11px;
+text-align:center;
+z-index:100;
+width:100%;
+height:100%;
+min-width:25px;
+max-height:20px;
+color:rgba(255,255,255);
+line-height:9px; 
+font-family: '微軟正黑體'!important;
+}
+
+/* 未讀氣泡框 */
+
+.new .response_count{
+border:5px solid transparent;
+background-color:rgba(255,255,255);
+}
+
+/* 已讀尾巴 */
+
+.response_count::after {
+content:"";
+position:absolute;
+left:4px;
+top:10px;
+border-color: rgba(255,255,255,0.3) transparent transparent rgba(255,255,255,0.3);
+border-style: solid solid solid solid;
+border-width: 5px 5px; 
+height: 0px; 
+width: 0px; 
+}
+
+/* 未讀尾巴 */
+
+.new .response_count::after {
+border-color: rgba(255,255,255,0.3) transparent transparent rgba(255,255,255,0.3);
+}
+
+-/*自訂橫條背景色*/
+' {}:not(*)/* { */,/* } */
+#top_bar .bar-color {
+background: rgba(255,255,255,0.2); /*自行查找想要的RGB色碼 0.8是透明度*/
+box-shadow: 0 5px 5px  rgba(0,0,0,0.2)
+}
+#dash-profile {
+position : relative;
+border-radius:100%;
+border-radius:10px 10px;
+}
+#form_holder {
+border:10px;
+border-radius:50%;
+border-radius:9px 9px;
+background:#989898;
+}
+/* rounded corners on floating unopened plurks */
+._lc_ .plurk_cnt { border-radius: 10px 10px 10px 10px; -khtml-border-radius: 9px; -webkit-border-radius: 9px; }
+
+/* rounded corners on open plurk dropdowns */
+._lc_ .info_box, ._lc_ .response_box {
+border:0px;
+border-radius:50%;
+border-radius:9px 9px;
+}
+
+#form_holder {
+border:0px;
+border-radius:100%;
+border-radius: 5 px 5px;
+}
+
+/* rounded corners on profile images beside plurks */
+.p_img {
+border:5px!important;
+}
+.p_img img {
+border:10px;
+border-radius:100%;
+border-radius:5px 5px;
+opacity: 0.8;
+
+
+/* rounded corners on response counts beside plurks */
+.new .response_count, .response_count {border-radius:9px;}
+{
+ul#filter_tab li {
+float : left;
+opacity: 5;
+}
+#filter_tab a {
+display : initial;
+overflow: initial;
+margin-right: 5px;
+}
+/* MENU UNSELECTED ITEMS (I have mine set as transparent. If you want to color, change "background" to "background-color: #HEXCODE;") */
+#filter_tab a.off_tab {
+background: transparent;
+border: none!important;
+color:#000000;
+font-size: 16px;
+}
+
+/* MENU SELECTED ITEM */
+#filter_tab a.filter_selected {
+outline: 0 !important;
+background:#FFFFFF;
+color:#101010;
+-khtml-border-radius: 10px;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+border-radius: 10px;
+border:1px white solid;
+font-size: 16px;
+filter: alpha(opacity=70) !important;
+-moz-opacity: 0.5 !important;
+opacity: 0.8 !important;
+}
+
+/* MENU ITEMS ON HOVER */
+#filter_tab a.off_tab:hover {
+background:#000000!important;
+color:#FFFFFF;
+text-decoration:underline;
+-khtml-border-radius: 10px;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+border-radius: 10px;
+font-size: 16px;
+border-right:5px white solid;
+border-bottom:5px white solid;
+box-shadow: 20px 20px 20px rgb(0,0,0)
+filter: alpha(opacity=70) !important;
+-moz-opacity: 0.7 !important;
+opacity: 0.8 !important;
+}
+/* UPDATER */
+#updater {
+border: 70 px;
+background: none;
+filter: alpha(opacity=70) !important;
+-moz-opacity: 0.8 !important;
+opacity: 0.8 !important;
+}
+
+#updater .text {color: #000000;}
+#updater a {color: #000000;}
+
+/* UPDATER UPON HOVER (HOPEFULLY AND WITH OPACITY IF YOU WANT IT) */
+#updater a:hover {background: #000000!important;
+color:#FFFFFF;
+filter: alpha(opacity=70) !important;
+-moz-opacity: 0.8 !important;
+opacity: 0.8 !important;}
+{
+/*VIEWED PLURKS COUNT */
+.response_count {
+background:#FFFFFFimportant;
+color:#080808 !important;
+}
+.plurk_cnt {filter:alpha(opacity=90) !important; opacity:0.5 !important; zoom:1;
+-moz-transition:opacity 0.5s ease-out, height 1.5s ease-out;
+-webkit-transition:opacity 0.5s ease-out, height 1.5s ease-out;
+-o-transition:opacity 0.5s ease-out, height 1.5s ease-out;}
+
+.plurk_cnt:hover {filter:alpha(opacity=100) !important; opacity:1 !important; zoom:1;
+-moz-transition:opacity 0.5s ease-in, height 1s ease-in;
+-webkit-transition:opacity 0.5s ease-in, height 1s ease-in;
+-o-transition:opacity 0.5s ease-in, height 1s ease-in;
+}
+/*UNREAD PLURKS COUNT*/
+.new .response_count {
+background:#808080 !important;
+color: #000000!important;
+{
+#plurk_ads,#plurk_ads img,#sliderAds.in,#sliderAds .adimg,#sliderAds .btnClose,#sliderAds .btnClose:hover,#sliderAds .btnClose .btnImage,#resp_banner_ads,#resp_banner_ads.show,#resp_banner_ads img.openx_img,.timeline #timeline_holder div.banana_plurk,.timeline #timeline_holder div.banana_plurk.impress,.timeline #timeline_holder.banana_show div.banana_plurk,div.adsense,section.adsense,section.adsense h3,div.cbox_ads,#top_bar .content a:nth-child(2){ display : none !important; }
+{a[href="/PLURKNAME"]:hover:after{
+background: #333;
+background-color: #fff;
+border-color: #ddd;
+border: 1px solid #ddd;
+border-radius: 5px;
+bottom: 102%;
+color: #000000;
+left: 0%;
+padding: 5px 15px;
+position: absolute;
+z-index: 100;
+width: auto;
+content : "NAME (character @ GAME)";
+{
+div#dashboard_holder {filter:alpha(opacity=0) !important; opacity:10 !important; zoom:1;
+-moz-transition:opacity 0.1s ease-out, height 1.5s ease-out;
+-webkit-transition:opacity 0.1s ease-out, height 1.5s ease-out;
+-o-transition:opacity 0.1s ease-out, height 1.5s ease-out;}
+
+div#dashboard_holder:hover {filter:alpha(opacity=0) !important; opacity:10!important; zoom:1;
+-moz-transition:opacity 0.1s ease-in, height 1s ease-in;
+-webkit-transition:opacity 0.1s ease-in, height 1s ease-in;
+-o-transition:opacity 0.1s ease-in, height 1s ease-in;
+}
+.unread #alert_beacon, .unread_generic {
+background:#F8F8F8!important;
+color: #F8F8F8!important;
+{
+.td_response_count
+{ padding-top:2px }
+{
+#timeline_cnt .plurk_box {
+width: 395px !important;
+}
+._lc_ .info_box, ._lc_ .response_box {
+border:0px;
+border-radius:55%;
+border-radius:7px 7px;
+}
+._lc_ .plurk_cnt {
+border-right: 0px !important;
+border-bottom: 0px !important;
+}
+ul#filter_tab li {
+float : left;
+opacity: 1;
+}
+#filter_tab a {
+display : initial;
+overflow: initial;
+margin-right: 5px;
+}
+/*-- Response box lower area --*/
+.mini_form, .info_box {
+background-color:transparent;
+border-radius:10px;
+}
+/*-- Response box background --*/
+.response_box {
+background:transparent;
+border-top: 1px solid;
+border-radius:0px;
+}
+/*-- Response box individual comments --*/
+.plurk_cnt {
+background:transparent !important;
+color:;
+border-radius:10px;
+{
+#timeline_cnt .plurk_box {
+width: 390px !important;
+max-height: 2.5em !important;
+}
+.p_img {
+border:0px!important;
+}
+.p_img img {
+border:0px;
+border-radius:100%;
+border-radius:10px 10px;
+height: 0.9 cm;
+weight: 9 px;
+}
+div#dashboard_holder
+{filter:alpha(opacity=20) !important; opacity:0.0 !important; zoom:1; font-size: 16px; font-color: #000000;}
+opacity:0.5;
+}
+.browse_button {
+display :_;
+moz-transition:opacity 0.1s ease-in;
+webkit-transition:opacity 0.1s ease-in;
+o-transition:opacity 0.1s ease-in;
+moz-transition:opacity 0.2s ease-out;
+webkit-transition:opacity 0.2s ease-out;
+o-transition:opacity 0.2s ease-out;
+opacity:0.3;
+{
+/*游標更改*/
+*, body, a, a:hover {cursor: url(https://images.plurk.com/5QnaPTNtgEJ90BDEzT8Beu.png), auto;}
+a:hover, {cursor: url(https://images.plurk.com/3jnlf19q6YZP8OJzyFEfsi.png), auto;}
+}
+/*設定游標*/
+._lch_ ~ .pop-menu, /*各種選單(噗首選項、top_bar帳號選項)*/
+._lch_ ~ .pop-menu li a /*選單裡的選項*/
+{ cursor:url(https://images.plurk.com/6DnocqDW5jOYStmtcgrIkB.png), auto; }
+}
+/*-- Dash --*/
+.dash-segment .segment-content {
+background: none;
+opacity: 10!important;
+}
+#timeline_holder
+{ height:89vh!important; }
+}
+.emoticon, .p_img {
+-webkit-transition-duration: 500ms;
+-moz-transition-duration: 500ms;
+-khtml-transition-duration: 500ms;
+}
+.emoticon:hover, .p_img:hover {
+-webkit-transform: rotate(390deg) scale(1.2);
+-moz-transform: rotate(390deg) scale(1.2);
+-khtml-transform: rotate(390deg) scale(1.2);
+}
+#bottom_line {
+background: transparent !important;
+border: 0px;
+}
+.bottom_start, .bottom_end {
+background:transparent !important;
+color:transparent;
+font-weight: 300;
+font-family: 'Helvetica' !important;
+font-size: 10px;
+}
+/*--Remove day divider bars --*/
+.day_bg .div_inner {opacity:0;}
+}
+/*載入動畫*/
+.loading > img {
+  background: url(https://images.plurk.com/2ICx356IgdA9Xl0sfZNe3g.gif)
+  no-repeat;
+  width: 147px;
+  height: 170px;
+  background-size: 150px;
+  padding-left: 147px;
+  margin-top: 15px;
+}
+.loading-div {
+  background: url(https://images.plurk.com/2ICx356IgdA9Xl0sfZNe3g.gif)
+  no-repeat;
+  background-size:150px;
+  width: 147px;
+  height: 170px;
+  left: 50%;
+}
+.loading-div > .cnt {
+  display: none;
+}
+._lch_ ~ .pop-window .loading > img{
+  display: none;
+}
+._lch_ ~ .pop-window .loading::after{
+  content: ' ';
+  display:block;
+  position: relative;
+  background: url(https://images.plurk.com/2ICx356IgdA9Xl0sfZNe3g.gif)
+  no-repeat;
+  background-size: 100px;
+  width: 100px;
+}
+/* 幫偷偷說把口罩戴回去-粉紅色 */
+[href="/anonymous"] img, ._lch_ ~ * [href="/anonymous"] img { content: url(https://images.plurk.com/4uaYTW9jo3A4P3N5HLO7s.gif); }
+
+/* 幫偷偷說把口罩戴回去-藍綠色 */
+[href="/anonymous"] img, ._lch_ ~ * [href="/anonymous"] img { content: url(https://images.plurk.com/4uaYTW9jo3A4P3N5HLO7s.gif); }
+
+/* 幫偷偷說換頭貼 */
+[href="/anonymous"] img, ._lch_ ~ * [href="/anonymous"] img { content: url(https://images.plurk.com/4uaYTW9jo3A4P3N5HLO7s.gif); }
+}
+/*----------The arrows before and after river browsing----------*/
+
+/*更換往前往後按鈕*/
+.cmp_arrow_right
+{
+background: url(http://i614.photobucket.com/albums/tt230/m66660000/_ic/gray_light/arrow_right_alt1_32x32.png);
+width:32px; height:32px;
+}
+.cmp_arrow_left
+{
+background: url(http://i614.photobucket.com/albums/tt230/m66660000/_ic/gray_light/arrow_left_alt1_32x32.png);
+width:32px; height:32px;
+}
+/*透明度變化*/
+.cmp_arrow_right,
+.cmp_arrow_left,
+.cmp_back_to_today
+{
+opacity: 0.1; zoom:1;
+transition: opacity 1.5s ease;
+}
+.cmp_arrow_right:hover,
+.cmp_arrow_left:hover,
+.cmp_back_to_today:hover
+{
+opacity: 0.9; zoom:1;
+transition: opacity 1.5s ease;
+}
+
+.browse_button .cmp_arrow_right:before,
+.browse_button .cmp_arrow_left:before,
+.browse_button .cmp_back_to_today:before
+{ opacity: 0 !important; }
+
+div.cmp_back_to_today.pif-arrow-left, /*左方回到最前*/
+div.cmp_back_to_today.pif-arrow-right /*右方回到最前*/
+{
+font-size: 10px !important;
+color:#898989 !important;
+background: none !important;
+margin-left: -10px !important;
+}
+div.cmp_back_to_today.pif-arrow-left::before,
+div.cmp_back_to_today.pif-arrow-right::before
+}
+/*去除連結外框虛線*/
+a:focus, :focus, a, a:link, a:visited, a:active, select, select:focus
+{ -moz-outline-style: none !important; outline: none !important; outline: 0 !important; }
+}
+/*Include the writing of the header*/
+.block_cnt .plurk_cnt
+{
+background: rgba(255,255,255,0.70) ! important;
+border: 0 !important;
+border-bottom: 1px solid rgba(204,187,187) !important;
+border-radius: 10px;
+transition: background 0.6s ease;
+}
+.block_cnt .plurk_cnt
+{
+padding: 6px 6px 4px 24px !important ;
+margin: -5px 0px 0px -24px !important;
+}
+.block_cnt .link_extend .plurk_cnt
+{
+background: rgba(255,255,255,0.7) !important;
+border-bottom: 1px solid rgba(204,187,187,0.2) !important;
+box-shadow: 0 5px 5px  rgba(0,0,0,0.8);
+transition: box-shadow 0.1s ease, background 0.6s ease;
+border-radius: 4px;
+}
+.block_cnt .plurk_box .plurk_cnt,
+.mini_form, .info_box
+{
+background: rgba(255,255,255) !important;
+border: 0 !important;
+border-bottom: 1px solid rgba(204,187,187,0.2) !important;
+}
+.list .plurk_cnt /*展開後的回應區*/
+{
+background: none !important;
+transition: background 0.7s ease-out;
+}
+.list .plurk_cnt:hover
+{
+background: rgba(131,153,176,0.2) !important;
+transition: background 0.3s ease-in;
+border-radius: 10px !important;
+}
+.block_cnt .plurk_box .plurk_cnt
+{
+border-bottom: 0 !important;
+border-radius: 5px 5px 5px 5px !important;
+}
+.plurk_box
+{
+border-radius: 0px !important;
+background: rgba(255,255,255,0.01) !important;
+}
+.mini_form
+{
+background: rgba(255,255,255,0.6) !important;
+border-top: 1px solid rgba(204,187,187,0.2) !important;
+}
+.info_box
+{
+background: rgba(255,255,255,0.7) !important;
+border-radius: 0px 0px 5px 5px !important;
+}
+.response_box
+{
+background: rgba(255,255,255,0.2) !important;
+border-radius: 0px 0px 0px 0px !important;
+border-top: 1px solid rgba(204,187,187,0.2) !important;
+border-bottom: 1px solid rgba(204,187,187,0.2) !important;
+}
+.list
+{
+transition: height 0.5s ease; /*列表延伸動態*/
+}
+.input_holder,
+td.td_cnt textarea,
+textarea#input_small
+{
+background: none !important;
+font-size: 1.03em !important;
+line-height: 2em !important;
+letter-spacing: 0.13em !important;
+color: rgba(137,137,137,1) !important;
+padding: 2px;
+min-height: 80px;
+/*噗列表換行*/
+.list .plurk_cnt .td_qual
+{ position: absolute; width: auto; overflow: visible; padding: 1em; margin-left: 0.5em; }
+.list .plurk_cnt .text_holder
+{ margin-top: 1.5em; padding: 1em; margin-left: 0.5em; width: auto !important; }
+}
+/*浪上的噗換行*/
+.block_cnt .plurk table { min-width: 322px !important; }
+.block_cnt .plurk_cnt .td_qual { position: absolute; overflow: visible; padding: 0em 0em 0.6em 0.6em;}
+.block_cnt .plurk_cnt .text_holder { margin-top: 1.3em; overflow: visible; padding: 0.6em;}
+div.plurk .link_extend { z-index: 2200; }
+.block_cnt
+{ padding: 0px !important; width: 300px !important; height: 56px !important; }
+.block_cnt .div_inner, .div_bottom
+{ max-height: 0px !important; }
+
+/*調整噗浪寬度*/
+.display table, .toggled table, .plurk_box table
+{ width: 470px !important; }
+.display .text_holder,.toggled .text_holder,
+.plurk_box .input_holder, .list table
+{ width: 100% !important; }
+.plurk .truncated, .text_holder
+{ min-width: 322px !important; min-height: 20px; }
+}
+/*新噗底色*/
+.plurk_box td .shade_6, td .shade_6,
+.plurk_box td .shade_5, td .shade_5,
+.plurk_box td .shade_4, td .shade_4,
+.plurk_box td .shade_3, td .shade_3,
+.plurk_box td .shade_2, td .shade_2,
+.plurk_box td .shade_1, td .shade_1
+{ background: rgba(255,255,255,0.66) !important; }
+.plurk.new .plurk_cnt
+{ box-shadow: 0px 0px 4px rgba(204,187,187,0.3); }
+
+/*回應時間*/
+div.response_time .holder { position: absolute; top: 0; left: 0px; top:20px; background: rgba(255,255,255,0.2) !important; }
+.response_time.plurk_cnt { padding: 0 !important; }
+
+/*回應數*/
+.dots .inner { display : none !important; }
+.response_count { color: #000000 !important; background: rgba(255,255,255,0.7) !important; margin-left: 4px !important; margin-top: -4px !important;}
+.new .response_count
+{
+background: rgba(255,255,255,0.2) !important;
+border: 0px solid !important;
+color: #000000 !important;
+border-radius: 6px;
+padding: 5px !important;
+box-shadow: 2px 1px 3px rgba(255,255,255,0.2));
+text-shadow: 0px 0px 0px #ddd;
+text-decoration: ; /*blink*/
+}
+/*Puyou picture on the wave*/
+div.p_img /*Remove the bottom frame of the picture*/
+{
+border: 0 !important;
+}
+div.p_img img /*image*/
+{
+border: 0 !important;
+padding: 0px;
+background: none !important;
+border-radius: 20px !important;
+}
+/*Press Enter to send*/
+.char_updater, .char_updater span { color: #555 !important; font-size: 10px !important; font-weight: 400 !important; background: none !important; }
+{
+/*Response area poof main settings*/
+.list .highlight_owner .td_qual a { color: #000 !important; } /*名稱*/
+.list .highlight_owner .plurk_cnt, .list .highlight_owner .plurk_cnt:hover { border-left: 3px solid #bbb !important; } /*區塊*/
+.list .highlight_owner .plurk_cnt .text_holder { color: none !important; } /*訊息*
+{
+
+_______
+
+/*影音圖片連結*/
+.plurk a.hashtag, .plurk a.hashtag:hover
+{
+color: #FFFFF !important;
+background: rgba(0,0,0,0.5) !important;
+border: 5px !important;
+border-radius: 7px !important;
+box-shadow: 0px 5px 5px rgba(255,255,255,0.5) !important;
+}
+.plurk a.oembed,
+.plurk a.oembedmeta,
+.plurk a.ogvideo.meta,
+.plurk a.youtube.video,
+.plurk a.appledaily,
+.plurk a.gmap,
+.plurk a.og, .plurk a.meta,
+.plurk a.embed,
+.plurk_content a.og,
+.plurk_content a.meta,
+.plurk_content a.embed,
+.plurk_content a.oembed,
+.plurk_content a.oembedmeta,
+.plurk_content a.youtube,
+.plurk_content a.appledaily,
+.plurk_content a.gmap
+{
+color: #00000 !important;
+background: rgba (0,0,0,0.8) !important;
+border: 7px !important;
+border-radius: 7px;
+margin: 2px !important;
+}
+a.youtube img,
+a.youtube:hover img,
+.youtube img,
+.youtube:hover img,
+.video img,
+.video:hover img,
+a.oembed img,
+a.oembed:hover img,
+a.oembedmeta img,
+a.oembedmeta:hover img,
+a.ogvideo.meta:hover,
+a.ogvideo.meta:hover img,
+a.appledaily img,
+a.appledaily:hover img,
+a.og img, a.og:hover img,
+a.meta img, a.meta:hover img,
+a.embed img, a.embed:hover img,
+a.ex_link pictureservices bigimg,
+a.ex_link:hover pictureservices bigimg,
+.content a.ex_link pictureservices bigimg,
+.content a.ex_link pictureservices bigimg:hover,
+.pictureservices img,
+.pictureservices:hover img,
+.plurk a.pictureservices img,
+.plurk a.pictureservices:hover img,
+.plurk a.pictureservices,
+.plurk a.pictureservices:hover,
+.plurk a.meta:hover img,
+body.t #dashboard_holder a.meta:hover img,
+body.t #dashboard_holder a.pictureservices img,
+body.t #dashboard_holder a.pictureservices,
+body.t #dashboard_holder a.pictureservices:hover,
+.permaplurk #dashboard_holder a.pictureservices img,
+.permaplurk #dashboard_holder a.meta:hover img,
+.permaplurk #dashboard_holder a.pictureservices,
+.permaplurk #dashboard_holder a.pictureservices:hover,
+.permaplurk #timeline_holder a.meta:hover img,
+.permaplurk #timeline_holder a.pictureservices img,
+.permaplurk #timeline_holder a.pictureservices,
+.permaplurk #timeline_holder a.pictureservices:hover
+{
+max-width: 80px !important;
+background: none !important;
+border: 5px !important;
+border-radius: 9px;
+margin: 2px !important;
+}
+a.youtube:hover img,
+a.oembed:hover img,
+.youtube:hover img,
+.video:hover img,
+.plurk a.meta:hover img,
+a.embed:hover img,
+a.ex_link:hover pictureservices bigimg,
+.pictureservices:hover img,
+.plurk a.pictureservices:hover img,
+.content a.ex_link pictureservices bigimg:hover,
+body.t #dashboard_holder a.meta:hover img,
+.permaplurk #dashboard_holder a.meta:hover img,
+.permaplurk #timeline_holder a.meta:hover img
+{
+box-shadow: 0px 10px 10px rgba(0,0,0,0.9) !important;
+}
+p#about_me .youtube img,
+p#about_me .youtube:hover img
+{ border: 0 !important; border-radius: 3px; }
+p#about_me a.youtube.video
+{
+font-size: 16px !important;
+max-height: 45px !important;
+overflow: hidden;_overflow: none;
+}
+p#about_me a.ogvideo:after,
+p#about_me a.videoservices:after
+{ opacity: 0 !important; zoom: 1; }
+.plurk_content .meta { padding: 4px !important; }
+{
+/ *remaining figures*/
+div.input_small_cu.char_updater
+{
+font-size: 0.97em;
+color: #000000 !important;
+background: none !important;
+text-decoration: none !important;
+}
+.perma_link a {color:  ! important;} /*Message link*/
+.report_link a {color: #555 !important;} /*Report*/
+.quote_link a {color: #555 !important;} /*Quote this poof*/
+{
+/*朋友粉絲圖縮小*/
+.friend_holder { margin-bottom: 28px; border: 28 !important; }
+.friend_holder table { margin-left: auto !important; margin-right: auto !important; border:0!important; }
+.friend_holder .user_link { height: 28px !important; width: 28px!important; border: 0 !important; }
+.friend_holder img { width: 28px; height: 28px; border: 0!important; }
+.user_link img
+{
+opacity: 0.8 !important; zoom:1;
+transition: opacity 1.5s ease;
+border-radius: 28px !important;
+}
+/*朋友粉絲按鈕*/
+a.friend_man
+{
+background: rgba(255,255,255) !important;
+border: 5px !important;
+border-bottom: 5px solid rgba(255,255,255,0.5) !important;
+border-radius: 15px !important;
+font-size: 15px !important;
+color: rgb(0,0,0) !important;
+transition: background 0.6s ease;
+}
+a.friend_man:hover
+{
+background: rgba(255,255,255,0.5) !important;
+border-bottom: 5px solid rgba(255,255,255,0.5)tant;
+text-decoration: none !important;
+color: rgb(0,0,0) !important;
+transition: background 0.3s ease;
+}
+a.friend_man.add_friend,
+a.friend_man.remove,
+a#follow_managment.friend_man.remove,
+a#follow_managment.friend_man.add_follow
+{}
+.friend_man:before { display: none; } /*隱藏連結前符號*/
+a.friend_man private_plurk.hideBlock {}
+}
+div#friend_managment
+{ text-align: center !important; }
+div#fan_managment
+{ text-align: center !important; }
+div#private_plurk
+{ text-align: left!important; }
+}
+/*----------主控台----------*/
+
+/*主控台各區背景*/
+div.dash-segment.dash-segment-profile /*自介區*/
+{
+background: rgba(255,255,255,0.4) !important;
+border-radius: 20px !important;
+padding: 5px !important;
+font: 300 18px monospace;
+color: #000000 !important;
+}
+div.dash-segment.dash-segment-stats /*統計區*/
+{
+background: rgba(255,255,255,0.4) !important;
+text-align:left!important;
+font: 300 18px monospace !important;
+color:  #FFFFFF !important;
+margin: 0px !important;
+border-radius: 20px 20px 0px 0px;
+width: 647px !important;
+}
+div.dash-segment.dash-segment-friends /*朋友區*/
+{
+background: rgba(255,255,255,0.4) !important;
+text-align: center;
+font:  0px monospace;
+color: rgba(255,255,255,0.4)!important;
+margin: 0px !important;
+border-radius: 0px 0px 20px 0px;
+}
+div.dash-segment.friendsList.dash-segment-fans /*粉絲區*/
+{
+background: rgba(255,255,255,0.4) !important;
+text-align: center;
+font: 0px monospace;
+color :rgba(255,255,255,0.4)!important;
+margin: 0px !important;
+border-radius: 0px 0px 20px 0px;
+}
+div.dash-segment.dash-segment-award /*徽章區*/
+{
+background: rgba(255,255,255,0.4) !important;
+margin: 0px !important;
+border-radius: 0px 0px 20px 20px;
+font: 0px monospace;
+}
+/*徽章變成黑色*/
+#dash-award .award_bar { filter: brightness(0); }
+}
+div#dash-profile,
+p#about_me,
+p#relationship_container,
+div#dash-stats,
+div#dash-friends,
+div#dash-fans,
+div#plurk-dashboard,
+.dash-segment .segment-content
+{
+background: none !important;
+}
+div#dash-stats h2, div#dash-friends h2, h2#h2_fans
+{
+display: none !important;
+}
+
+/*統計項目與卡馬區對齊調整*/
+#dash-stats table th { float : left; height: 0px !important;}
+.karma_hover { margin: 0px !important; }
+#karma /*卡馬*/
+{
+font-size: 2em !important;
+color: rgb(0,0,0) !important;
+text-shadow: 	rgba(255,255,255,0.9) 0 0 6px;
+}
+.karma_hover
+{
+font: 300 18px monospace !important;
+color: #000000!important;
+}
+#plurk-dashboard #dash-stats .dash-stats-karma
+{
+text-align: auto !important;
+margin-top: 45px !important;
+margin-left: 35px !important;
+}
+#dash-stats table th, /*項目*/
+#dash-stats table td /*數值*/
+{
+color: #000000 !important;
+}
+/*大頭貼*/
+.dash-segment img.profile-pic
+{
+width: 75px !important;
+height: 75px !important;
+border: 0px solid #bbb;
+border-radius: 70px !important;
+}
+#dash-profile
+{
+max-height: 55px !important;
+border-radius: 10px 10px 10px 10px;
+}
+div#full_name /*姓名*/
+{
+font-size: 1.2em !important;
+color: #000 !important;
+text-shadow: # 0 0 8px;
+}
+p#about_me /*關於我*/
+{
+font-size: 0.95em !important;
+line-height: 2em !important;
+color: # !important;
+text-shadow: # 0 0 8px;
+}
+p#about_me a
+{
+color: rgba(2,39,59,1) !important;
+border-bottom: 1px solid rgba(187,187,187) !important;
+}
+p#about_me a:hover
+{
+color: rgba(2,39,59,1,0.9) !important;
+border-bottom: 1px solid rgba(187,187,187,0.9) !important;
+}
+/*發噗區*/
+div.input_holder, #input_big
+{
+background: none !important;
+border: 0 !important;
+}
+#input_big.content { color: # !important; }
+textarea#input_big_private, textarea#input_big, textarea #input_big .content, textarea#input_permalink, input#current_query, td.td_cnt textarea, textarea#input_small
+{
+background: rgba(255,255,255,0.2) !important;
+border: 0 !important;
+min-height: 50px;
+line-height: 24px;
+color: #000 !important;
+font-size: 17px !important;
+border-radius: 5px !important;
+padding: 4px 2px 3px 2px !important;
+box-shadow: 0pt 0px 0pt rgba(0,0,0,0.02), 0pt 0px 0px rgba(0,0,0,0.01) inset;
+transition: background 0.6s ease;
+}
+td.td_cnt textarea, textarea#input_small
+{
+font-size: 12px !important;
+min-height: 80px;
+line-height: 2em !important;
+letter-spacing: 0.13em !important;
+color: #000 !important;
+padding: 0px 2px 3px 2px !important;
+border-bottom: 1px solid #898989 !important;
+border-radius: 0px !important;
+}
+textarea:hover, textarea#input_big_private:hover, textarea#input_big:hover, textarea#input_permalink:hover, input#current_query:hover
+{
+background: rgba(255,255,255) !important;
+border-bottom: 1px solid #898989 !important;
+box-shadow: 0pt -1px 0pt rgba(0,0,0,0.02), 0pt 1px 2px rgba(0,0,0,0.01) inset;
+color: #000 !important;
+transition: background 0.6s ease;
+}
+textarea:focus, textarea#input_big_private:focus, textarea#input_big:focus,textarea#input_permalink:focus, input#current_query:focus
+{
+background: rgba(255,255,255,0.7) !important;
+box-shadow: 0pt 1px 2px rgba(0,0,0,0.03) inset, 0pt 1px 0pt rgba(255,255,255,0.02);
+color: #000 !important;
+border-bottom: 1px solid #898989 !important;
+transition: background 0.6s ease;
+}
+/*各圖示*/
+.pif-emoticon.cmp_emoticon_off, /*表情符號*/
+.pif-media.cmp_media_off, /*分享資訊*/
+.pif-sync.cmp_sync_off, /*同步更新*/
+.pif-anynomous.cmp_anynomous_off, /*偷偷說*/
+.pif-privacy.cmp_privacy_off /*私人訊息及隱私選項*/
+{ font-size: 1.1em !important; color: #444 !important; width:20px!important; opacity: 0.6 !important; zoom: 1; transition: opacity 0.3s ease;}
+
+/*各圖示滑鼠移至效果*/
+.pif-emoticon.cmp_emoticon_on,
+.pif-media.cmp_media_on,
+.pif-sync.cmp_sync_on,
+.pif-anynomous.cmp_anynomous_on,
+.pif-privacy.cmp_privacy_on
+{ font-size: 1.1em !important; color: #333 !important; width: 20px !important; opacity: 1 !important; zoom: 1; transition: opacity 0.3s ease; }
+
+/*浪上的噗內發噗區小圖示*/
+.cmp_emoticon_mini_off.pif-emoticon,
+.pif-media.cmp_media_mini_off
+{ color: #666 !important; font-size: 0.98em !important; opacity:0.6 !important; zoom: 1; transition: opacity 0.3s ease; }
+.cmp_emoticon_mini_on.pif-emoticon,
+.pif-media.cmp_media_mini_on
+{ color: #333 !important; font-size: 0.98em !important; opacity:1 !important; zoom: 1; transition: opacity 0.3s ease; }
+
+/*去除表符圖示背景*/
+.pif-emoticon.cmp_emoticon_off::before,
+.pif-emoticon.cmp_emoticon_off::after,
+.pif-emoticon.cmp_emoticon_on::before,
+.pif-emoticon.cmp_emoticon_on::after,
+.cmp_emoticon_mini_off.pif-emoticon::after,
+.cmp_emoticon_mini_on.pif-emoticon::after
+{ background: none !important; }
+
+/*_*/
+.pif-poll popview-targeting cmp_poll_off::before
+.pif-poll popview-targeting cmp_poll_off::after
+.pif-poll popview-targeting cmp_poll_onn::before
+.pif-poll popview-targeting cmp_poll_onn::after
+{ font-size: 1.1em !important; color: #00000 !important; width:20px!important; opacity: 0.6 !important; zoom: 1; transition: opacity 0.3s ease;}
+
+/*plurk按鈕*/
+.submit_img
+{
+background: rgba(255,255,255,0.4) !important;
+border-radius: 20px !important;
+color:#000 !important;
+font-size: 1.4em !important;
+text-shadow: 0px 0px 3px rgba(255,255,255,0.4) !important;
+transition: background 0.6s ease;
+}
+.submit_img:hover
+{
+background: rgba(255,255,255,0.7) !important;
+transition: background 0.6s ease;
+}
+
+/*發噗區語助詞*/
+.m_qualifier { background: none !important; font-size: 0.7em !important; }
+.plurkForm .m_qualifier { color: #000 !important; }
+.plurkaction .m_qualifier { color: #000 !important; }
+
+/*下拉箭頭*/
+.pif-dropdown::before { transform: scale(0.7); }
+
+/*浪上的噗語助詞*/
+.qualifier, .m_qualifier, .r_qualifier, div.bigplurk .r_qualifier, .mini_form .m_qualifier, .user .qualifier, .qual_menu td, span.qualifier.q_shares, .qual_menu .q_shares, .q_shares, td .q_shares, td .q_likes, td .q_loves, td .q_gives, td .q_hates, td .q_wants, td .q_wishes, td .q_needs, td .q_will, td .q_hopes, td .q_asks, td .q_has, td .q_was, td .q_wonders, td .q_feels, td .q_thinks, td .q_says, td .q_is, td .q_replurks
+{
+background: #000000 !important;
+border: 20px !important;
+font-size: 0.9em !important;
+font-weight: 400 !important;
+color: #FFFFFF !important;
+}
+.q_replurks { background-image: none !important; }
+
+/*換圖片*/
+.list .empty /*沒有回應的噗*/
+{
+background: url(https://images.plurk.com/2VSdCwuOFsJp2xeeA8xJnA.png) no-repeat 50% 0px transparent;
+height: 200px;
+color: #fff !important;
+margin: 10px 0 0 0;
+padding: 10px 0 0 0;
+text-indent: -9999px;
+}
+
+/*選取標注*/
+::-moz-selection
+{
+background: #000 !important;
+color: #bbb;
+}
+::selection
+{
+background: #000 !important;
+color: #bbb;
+}
+/*噗主對話框尾巴位置*/
+.list .highlight_owner .plurk_cnt .text_holder::after {
+  left: auto;
+  right:3px;
+}
+/*對話框參考：https://www.plurk.com/p/ogg8nj*/
+/********************下方不要更動*********************/
+/*名字換行*/
+.list .plurk_cnt .td_qual  {
+  position:absolute;
+  width:auto;
+  overflow:visible;
+  margin: 0 0.7em;
+}
+.list .plurk_cnt .text_holder  {
+  display: inline-block;
+  padding:0.5em 1em;
+  margin: 1.5em 1em 0;
+  width:auto !important;
+  border-radius:16px;
+}
+
+/*回應邊距調整*/
+.response .td_cnt {
+    padding: 2px 3px 5px 0;
+}
+
+.response .plurk_cnt {background-color: transparent;}
+
+/*對話框尾巴樣式和位置*/
+.list .plurk_cnt .text_holder::after {
+  content:"";
+  position:absolute;
+  border-style: solid;
+  border-width: 7px 5px; 
+  height: 0px; 
+  width: 0px;
+  left:3px;
+  top:-2px;
+  border-color: transparent;
+}
+
+/*噗主對話框尾巴位置*/
+.list .highlight_owner .plurk_cnt .text_holder::after {
+  left: auto;
+  right:3px;
+}
+
+/*噗主留言靠右*/
+.list .highlight_owner .td_cnt {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/*噗主暱稱靠右*/
+.list .highlight_owner .td_qual {
+  right: 0px;
+}
+/********************上方不要更動*********************/
+
+/*點開噗文寬度*/
+.timeline-cnt .plurk_box {
+  width: 445px;
+}
+/*隱藏發語詞*/
+.qualifier.q_says {
+  display: none;
+}
+/*更改回應最大寬度*/
+.list .plurk_cnt .text_holder  {
+  max-width: 66%;
+}
+/*回應背景色*/
+.response_box {background-color: #97B3DB;}
+
+/*最上方回應數顏色*/
+.response-count.pif-message {color: #FFF;}
+
+/*暱稱顏色*/
+.list .name {
+  color:#000000 !important; 
+  text-decoration: none;
+} 
+
+/*非噗主對話框顏色*/
+.list .td_cnt .text_holder {
+  background:#FFF;
+}
+/*非噗主對話框尾巴顏色*/
+.list .plurk_cnt .text_holder::after {
+  border-left-color: #FFF;
+}
+
+/*噗主對話框顏色*/
+.list .highlight_owner .td_cnt .text_holder {
+  background:#FFFFFF;
+}
+/*噗主對話框尾巴顏色*/
+.list .highlight_owner .plurk_cnt .text_holder::after {
+  border-left-color: transparent; /*這一行不要動*/
+  border-right-color:#FFFFFF; /*改這邊*/
+}
+/********************更改時間樣式*********************/
+/*每則留言間的空隙調小*/
+.response-manager > * {
+    padding: 2px 6px 0px;
+}
+.response {
+  margin: 0;
+}
+
+/*顯示時間樣式更改*/
+.response-manager {
+  position: relative;
+  top: auto;
+  right: auto;
+  display: flex;
+  justify-content: start;
+  margin: 0 0.5em 0 1em;  
+  border: 0;
+  background: transparent;
+  transform-origin: left;
+}
+/*顯示投幣樣式更改*/
+.response-manager .coin {
+    position: relative;
+    top: auto;
+    right: auto;
+}
+/*噗主時間靠右*/
+.highlight_owner .response-manager {
+  justify-content: end;
+  transform-origin: right;
+}
+
+/*時間、回覆跟箭頭的顏色&背景*/
+.response-manager .edit, .response-manager .time a, .response-manager .mention, .response-manager .option {
+  background: transparent;  
+  color: #FFF;
+}
+/*回應邊距調整*/
+.response .td_cnt {
+    padding: 4px 3px 20px 0;
+}
+/*顯示時間時留位置給它*/
+.response.show-response-manager .td_cnt {
+    padding-bottom: 0px;
+}
+
+/*對話框參考：https://www.plurk.com/p/ogg8nj*/
+/********************下方不要更動*********************/
+/*名字換行*/
+.list .plurk_cnt .td_qual  {
+  position:absolute;
+  width:auto;
+  overflow:visible;
+  margin: 0 0.7em;
+}
+.list .plurk_cnt .text_holder  {
+  display: inline-block;
+  padding:0.5em 1em;
+  margin: 1.5em 1em 0;
+  width:auto !important;
+  border-radius:16px;
+}
+
+.response .plurk_cnt {background-color: transparent;}
+
+/*對話框尾巴樣式和位置*/
+.list .plurk_cnt .text_holder::after {
+  content:"";
+  position:absolute;
+  border-style: solid;
+  border-width: 7px 5px; 
+  height: 0px; 
+  width: 0px;
+  left:3px;
+  top:-2px;
+  border-color: transparent;
+}
+
+/*噗主對話框尾巴位置*/
+.list .highlight_owner .plurk_cnt .text_holder::after {
+  left: auto;
+  right:3px;
+}
+
+/*噗主留言靠右*/
+.list .highlight_owner .td_cnt {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/*噗主暱稱靠右*/
+.list .highlight_owner .td_qual {
+  right: 0px;
+}
+/********************上方不要更動*********************/
+
+/*點開噗文寬度*/
+.timeline-cnt .plurk_box {
+  width: 445px;
+}
+/*隱藏發語詞*/
+.qualifier.q_says {
+  display: none;
+}
+/*更改回應最大寬度*/
+.list .plurk_cnt .text_holder  {
+  max-width: 66%;
+}
+/*回應背景色*/
+.response_box {background-color: #97B3DB;}
+
+/*最上方回應數顏色*/
+.response-count.pif-message {color: #FFF;}
+
+/*暱稱顏色*/
+.list .name {
+  color:#46556C !important; 
+  text-decoration: none;
+} 
+
+/*非噗主對話框顏色*/
+.list .td_cnt .text_holder {
+  background:#FFF;
+}
+/*非噗主對話框尾巴顏色*/
+.list .plurk_cnt .text_holder::after {
+  border-left-color: #FFF;
+}
+
+/*噗主對話框顏色*/
+.list .highlight_owner .td_cnt .text_holder {
+  background:#FFFFFF;
+}
+/*噗主對話框尾巴顏色*/
+.list .highlight_owner .plurk_cnt .text_holder::after {
+  border-left-color: transparent; /*這一行不要動*/
+  border-right-color: #FFFFFF; /*改這邊*/
+}
+/*對話框參考：https://www.plurk.com/p/ogg8nj*/
+/********************下方不要更動*********************/
+/*名字換行*/
+.list .tr_cnt {
+  display: flex;
+  flex-direction: column;
+}
+/*噗主留言靠右*/
+.list .highlight_owner .td_cnt {
+  display: flex;
+  justify-content: flex-end;
+}
+/*噗主名字靠右*/
+.list .highlight_owner .plurk_cnt .td_qual {
+  display:flex;
+  justify-content: flex-end;
+  width: auto;
+}
+
+/*對話框邊距調整*/
+.list .plurk_cnt .td_cnt {
+  padding: 0.5em 5px 0;
+}
+
+/*對話框樣式*/
+.list .plurk_cnt .text_holder  {
+  display: inline-block;
+  padding:0.5em 1em;
+  width:auto !important;
+  border-radius:16px;
+  min-width: 0;
+}
+
+.response .plurk_cnt {background-color: transparent;}
+
+/*對話框尾巴樣式和位置*/
+.list .plurk_cnt .text_holder::after {
+  content:"";
+  position:absolute;
+  border-style: solid;
+  border-width: 7px 5px; 
+  height: 0px; 
+  width: 0px;
+  left:3px;
+  top:-2px;
+  border-color: transparent;
+}
+
+/*噗主對話框尾巴位置*/
+.list .highlight_owner .plurk_cnt .text_holder::after {
+  left: auto;
+  right:3px;
+}
+/********************上方不要更動*********************/
+
+/*點開噗文寬度*/
+.timeline-cnt .plurk_box {
+  width: 445px;
+}
+/*隱藏發語詞*/
+.qualifier.q_says {
+  display: none;
+}
+/*更改回應最大寬度*/
+.list .plurk_cnt .text_holder  {
+  max-width: 66%;
+}
+/*回應背景色*/
+.response_box {background-color: #97B3DB;}
+
+/*最上方回應數顏色*/
+.response-count.pif-message {color: #FFF;}
+
+/*暱稱顏色*/
+.list .name {
+  color:#46556C !important; 
+  text-decoration: none;
+} 
+
+/*非噗主對話框顏色*/
+.list .td_cnt .text_holder {
+  background:#FFF;
+}
+/*非噗主對話框尾巴顏色*/
+.list .plurk_cnt .text_holder::after {
+  border-left-color: #FFF;
+}
+
+/*噗主對話框顏色*/
+.list .highlight_owner .td_cnt .text_holder {
+  background:#FFFFFF;
+}
+/*噗主對話框尾巴顏色*/
+.list .highlight_owner .plurk_cnt .text_holder::after {
+  border-left-color: transparent; /*這一行不要動*/
+  border-right-color: #FFFFFF; /*改這邊*/
+}
+/********************更改時間樣式*********************/
+/*每則留言間的空隙調小*/
+.response-manager > * {
+    padding: 2px 6px 0px;
+}
+.response {
+  margin: 0;
+}
+.response .plurk_cnt {
+    padding: 0;
+}
+
+/*顯示時間樣式更改*/
+.response-manager {
+  position: relative;
+  top: auto;
+  right: auto;
+  display: flex;
+  justify-content: start;
+  margin: 0 0.5em 0 1em;  
+  border: 0;
+  background: transparent;
+  transform-origin: left;
+}
+/*顯示投幣樣式更改*/
+.response-manager .coin {
+    position: relative;
+    top: auto;
+    right: auto;
+}
+/*噗主時間靠右*/
+.highlight_owner .response-manager {
+  justify-content: end;
+  transform-origin: right;
+}
+
+/*時間、回覆跟箭頭的顏色&背景*/
+.response-manager .edit, .response-manager .time a, .response-manager .mention, .response-manager .option {
+  background: transparent;  
+  color: #FFF;
+}
+/*整個回應邊距調整(含名字及留言)*/
+.response .plurk_cnt {
+  padding: 0 5px 20px;
+}
+/*顯示時間時留位置給它*/
+.response.show-response-manager .plurk_cnt {
+    padding-bottom: 0px;
+}
+
+/*對話框參考：https://www.plurk.com/p/ogg8nj*/
+/********************下方不要更動*********************/
+/*名字換行*/
+.list .tr_cnt {
+  display: flex;
+  flex-direction: column;
+}
+/*噗主留言靠右*/
+.list .highlight_owner .td_cnt {
+  display: flex;
+  justify-content: flex-end;
+}
+/*噗主名字靠右*/
+.list .highlight_owner .plurk_cnt .td_qual {
+  display:flex;
+  justify-content: flex-end;
+  width: auto;
+}
+
+/*對話框邊距調整*/
+.list .plurk_cnt .td_cnt {
+  padding: 0.5em 5px 0;
+}
+/*對話框樣式*/
+.list .plurk_cnt .text_holder  {
+  display: inline-block;
+  padding:0.5em 1em;
+  width:auto !important;
+  border-radius:16px;
+  min-width: 0;
+}
+
+.response .plurk_cnt {background-color: transparent;}
+
+/*對話框尾巴樣式和位置*/
+.list .plurk_cnt .text_holder::after {
+  content:"";
+  position:absolute;
+  border-style: solid;
+  border-width: 7px 5px; 
+  height: 0px; 
+  width: 0px;
+  left:3px;
+  top:-2px;
+  border-color: transparent;
+}
+
+/*噗主對話框尾巴位置*/
+.list .highlight_owner .plurk_cnt .text_holder::after {
+  left: auto;
+  right:3px;
+}
+
+/********************上方不要更動*********************/
+
+/*點開噗文寬度*/
+.timeline-cnt .plurk_box {
+  width: 445px;
+}
+/*隱藏發語詞*/
+.qualifier.q_says {
+  display: none;
+}
+/*更改回應最大寬度*/
+.list .plurk_cnt .text_holder  {
+  max-width: 66%;
+}
+/*回應背景色*/
+.response_box {background-color: #97B3DB;}
+
+/*最上方回應數顏色*/
+.response-count.pif-message {color: #FFF;}
+
+/*暱稱顏色*/
+.list .name {
+  color: #46556C !important;
+  text-decoration: none;
+} 
+
+/*非噗主對話框顏色*/
+.list .td_cnt .text_holder {
+  background:#FFF;
+}
+/*非噗主對話框尾巴顏色*/
+.list .plurk_cnt .text_holder::after {
+  border-left-color: #FFF;
+}
+
+/*噗主對話框顏色*/
+.list .highlight_owner .td_cnt .text_holder {
+  background: #FFFFFF;
+}
+/*噗主對話框尾巴顏色*/
+.list .highlight_owner .plurk_cnt .text_holder::after {
+  border-left-color: transparent; /*這一行不要動*/
+  border-right-color: #FFFFFF; /*改這邊*/
+}
+/*暱稱顏色*/
+.list /*替換後就是該人的暱稱*/ {
+  color: /*換成想要的顏色*/ !important;
+}
+
+/*替換後就是該人的暱稱*//*←請全數替代*/
+
+/**更改自己暱稱： .name[data-uid="自己的UID"] UID可在電腦版設定＞噗浪貼＞複製噗浪貼的HTML裡找到**/
+/*更換成其他人的uid也可以更改特定帳號的顏色*/
+
+/**更改噗主暱稱：.highlight_owner .name**/
+/**更改非噗主暱稱：.name**/
+/**更改偷偷說噗主暱稱：.response.highlight_owner .name[data-uid="99999"]**/
+/**更改偷偷說自己的暱稱：.response:not(.highlight_owner) .name[data-uid="99999"][style="color:#000000"]**/
+/**更改偷偷說自己以外的旅人暱稱：.response:not(.highlight_owner) .name[data-uid="99999"]**/
+}
+/********************在暱稱前增加圖示*********************/
+/***********下方更改圖片***********/
+/*改全部噗非噗主小圖示，要改圖片在url那邊改就可以了*/
+.list .response:not(.highlight_owner) .name::before {
+  background-image: url('https://images.plurk.com/4uaYTW9jo3A4P3N5HLO7s.gif');
+}
+/*改全部噗噗主小圖示，要改圖片在url那邊改就可以了*/
+.list .response.highlight_owner .name::after {
+    background-image: url('https://images.plurk.com/4uaYTW9jo3A4P3N5HLO7s.gif');
+}
+
+/*改偷偷說非噗主小圖示*/
+.list .response:not(.highlight_owner) .tr_cnt .name[data-uid='99999']::before {
+  background-image: url('https://images.plurk.com/4uaYTW9jo3A4P3N5HLO7s.gif');
+}
+/*改偷偷說自己回應的小圖示*/
+.list .response:not(.highlight_owner) .tr_cnt .name[data-uid='99999'][style="color:#0a9c17"]::before {
+  background-image: url('https://images.plurk.com/4uaYTW9jo3A4P3N5HLO7s.gif');
+}
+/*改偷偷說噗主小圖示*/
+.list .response.highlight_owner .tr_cnt .name[data-uid='99999']::after {
+  background-image: url('https://images.plurk.com/4uaYTW9jo3A4P3N5HLO7s.gif');
+}
+
+/*改特定帳號非噗主小圖示，uid自行更換*/
+.list .response:not(.highlight_owner) .tr_cnt .name[data-uid='12345678']::before {
+  background-image: url('https://images.plurk.com/4uaYTW9jo3A4P3N5HLO7s.gif');
+}
+/*改特定帳號噗主小圖示，uid自行更換*/
+.list .response.highlight_owner .tr_cnt .name[data-uid='12345678']::after {
+  background-image: url(https://images.plurk.com/4uaYTW9jo3A4P3N5HLO7s.gif');
+}
+
+/*隨機非噗主小圖示，uid尾數為9為同一張圖*/
+.list .response:not(.highlight_owner) .name[data-uid$='9']::before {
+  background-image: url('https://images.plurk.com/4uaYTW9jo3A4P3N5HLO7s.gif');
+}
+/*隨機噗主小圖示，uid尾數為4為同一張圖*/
+.list .response.highlight_owner .name[data-uid$='4']::after {
+  background-image: url('https://images.plurk.com/4uaYTW9jo3A4P3N5HLO7s.gif');
+}
+/***********上方更改圖片***********/
+
+/*圖示樣式設定*/
+.list .response:not(.highlight_owner) .name::before, .list .response.highlight_owner .name::after {
+  background-size: 100%;
+  display: inline-block;
+  width: 20px; 
+  height: 20px;
+  content:"";
+  border-radius: 50%;  /*頭貼圓角*/
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/*頭貼位置設定*/
+.list .response:not(.highlight_owner) .name::before {
+  margin: 0px 5px -7px -5px;
+}
+.list .response.highlight_owner .name::after {
+    margin: 0px -5px -7px 5px;
+}
+
+/*對話框參考：https://www.plurk.com/p/ogg8nj*/
+/********************下方不要更動*********************/
+/*名字換行*/
+.list .tr_cnt {
+  display: flex;
+  flex-direction: column;
+}
+/*噗主留言靠右*/
+.list .highlight_owner .td_cnt {
+  display: flex;
+  justify-content: flex-end;
+}
+/*噗主名字靠右*/
+.list .highlight_owner .plurk_cnt .td_qual {
+  display:flex;
+  justify-content: flex-end;
+  width: auto;
+}
+
+/*對話框邊距調整*/
+.list .plurk_cnt .td_cnt {
+  padding: 0.5em 15px 0;  /*位置往外調，留出頭貼位置*/
+}
+
+/*對話框樣式*/
+.list .plurk_cnt .text_holder  {
+  display: inline-block;
+  padding:0.5em 1em;
+  width:auto !important;
+  border-radius:16px;
+  min-width: 0;
+}
+
+.response .plurk_cnt {background-color: transparent;}
+
+/*對話框尾巴樣式和位置*/
+.list .plurk_cnt .text_holder::after {
+  content:"";
+  position:absolute;
+  border-style: solid;
+  border-width: 7px 5px; 
+  height: 0px; 
+  width: 0px;
+  left:3px;
+  top:-2px;
+  border-color: transparent;
+}
+
+/*噗主對話框尾巴位置*/
+.list .highlight_owner .plurk_cnt .text_holder::after {
+  left: auto;
+  right:3px;
+}
+/********************上方不要更動*********************/
+
+/*點開噗文寬度*/
+.timeline-cnt .plurk_box {
+  width: 445px;
+}
+/*隱藏發語詞*/
+.qualifier.q_says {
+  display: none;
+}
+/*更改回應最大寬度*/
+.list .plurk_cnt .text_holder  {
+  max-width: 66%;
+}
+/*回應背景色*/
+.response_box {background-color: #97B3DB;}
+
+/*最上方回應數顏色*/
+.response-count.pif-message {color: #FFF;}
+
+/*暱稱顏色*/
+.list .name {
+  color:#000000 !important; 
+  text-decoration: underline;
+} 
+
+/*非噗主對話框顏色*/
+.list .td_cnt .text_holder {
+  background:#FFF;
+}
+/*非噗主對話框尾巴顏色*/
+.list .plurk_cnt .text_holder::after {
+  border-left-color: #FFF;
+}
+
+/*噗主對話框顏色*/
+.list .highlight_owner .td_cnt .text_holder {
+  background:#FFFFFF;
+}
+/*噗主對話框尾巴顏色*/
+.list .highlight_owner .plurk_cnt .text_holder::after {
+  border-left-color: transparent; /*這一行不要動*/
+  border-right-color: #FFFFFF; /*改這邊*/
+}
+/********************在暱稱前增加圖示*********************/
+/***********下方更改圖片***********/
+/*改全部噗非噗主小圖示，要改圖片在url那邊改就可以了*/
+.list .response:not(.highlight_owner) .name::before {
+  background-image: url('https://images.plurk.com/4uaYTW9jo3A4P3N5HLO7s.gif');
+}
+/*改全部噗噗主小圖示，要改圖片在url那邊改就可以了*/
+.list .response.highlight_owner .name::after {
+    background-image: url('https://images.plurk.com/4uaYTW9jo3A4P3N5HLO7s.gif);
+}
+
+/*改偷偷說非噗主小圖示*/
+.list .response:not(.highlight_owner) .tr_cnt .name[data-uid='99999']::before {
+  background-image: url('https://images.plurk.com/4uaYTW9jo3A4P3N5HLO7s.gif);
+}
+/*改偷偷說自己回應的小圖示*/
+.list .response:not(.highlight_owner) .tr_cnt .name[data-uid='99999'][style="color:#0a9c17"]::before {
+  background-image: url(https://images.plurk.com/4uaYTW9jo3A4P3N5HLO7s.gif');
+}
+/*改偷偷說噗主小圖示*/
+.list .response.highlight_owner .tr_cnt .name[data-uid='99999']::after {
+  background-image: url('https://images.plurk.com/4uaYTW9jo3A4P3N5HLO7s.gif')
+
+/*改特定帳號非噗主小圖示，uid自行更換*/
+.list .response:not(.highlight_owner) .tr_cnt .name[data-uid='12345678']::before {
+  background-image: url('https://images.plurk.com/4uaYTW9jo3A4P3N5HLO7s.gif')
+
+/*改特定帳號噗主小圖示，uid自行更換*/
+.list .response.highlight_owner .tr_cnt .name[data-uid='12345678']::after {
+  background-image: url('https://images.plurk.com/4uaYTW9jo3A4P3N5HLO7s.gif')
+}
+/*隨機非噗主小圖示，uid尾數為9為同一張圖*/
+.list .response:not(.highlight_owner) .name[data-uid$='9']::before {
+  background-image: url('https://images.plurk.com/4uaYTW9jo3A4P3N5HLO7s.gif');
+}
+/*隨機噗主小圖示，uid尾數為4為同一張圖*/
+.list .response.highlight_owner .name[data-uid$='4']::after {
+  background-image: url('https://images.plurk.com/4uaYTW9jo3A4P3N5HLO7s.gif');
+}
+/***********上方更改圖片***********/
+
+/*圖示樣式設定*/
+.list .response:not(.highlight_owner) .name::before, .list .response.highlight_owner .name::after {
+  background-size: 100%;
+  display: inline-block;
+  width: 20px; 
+  height: 20px;
+  content:"";
+  border-radius: 50%;  /*頭貼圓角*/
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/*頭貼位置設定*/
+.list .response:not(.highlight_owner) .name::before {
+  margin: 0px 5px -7px -5px;
+}
+.list .response.highlight_owner .name::after {
+    margin: 0px -5px -7px 5px;
+}
+
+/*對話框參考：https://www.plurk.com/p/ogg8nj*/
+/********************下方不要更動*********************/
+/*名字換行*/
+.list .tr_cnt {
+  display: flex;
+  flex-direction: column;
+}
+/*噗主留言靠右*/
+.list .highlight_owner .td_cnt {
+  display: flex;
+  justify-content: flex-end;
+}
+/*噗主名字靠右*/
+.list .highlight_owner .plurk_cnt .td_qual {
+  display:flex;
+  justify-content: flex-end;
+  width: auto;
+}
+
+/*對話框邊距調整*/
+.list .plurk_cnt .td_cnt {
+  padding: 0.5em 15px 0;  /*位置往外調，留出頭貼位置*/
+}
+
+/*對話框樣式*/
+.list .plurk_cnt .text_holder  {
+  display: inline-block;
+  padding:0.5em 1em;
+  width:auto !important;
+  border-radius:16px;
+  min-width: 0;
+}
+
+.response .plurk_cnt {background-color: transparent;}
+
+/*對話框尾巴樣式和位置*/
+.list .plurk_cnt .text_holder::after {
+  content:"";
+  position:absolute;
+  border-style: solid;
+  border-width: 7px 5px; 
+  height: 0px; 
+  width: 0px;
+  left:3px;
+  top:-2px;
+  border-color: transparent;
+}
+
+/*噗主對話框尾巴位置*/
+.list .highlight_owner .plurk_cnt .text_holder::after {
+  left: auto;
+  right:3px;
+}
+/********************上方不要更動*********************/
+
+/*點開噗文寬度*/
+.timeline-cnt .plurk_box {
+  width: 445px;
+}
+/*隱藏發語詞*/
+.qualifier.q_says {
+  display: none;
+}
+/*更改回應最大寬度*/
+.list .plurk_cnt .text_holder  {
+  max-width: 66%;
+}
+/*回應背景色*/
+.response_box {background-color: #97B3DB;}
+
+/*最上方回應數顏色*/
+.response-count.pif-message {color: #FFF;}
+
+/*暱稱顏色*/
+.list .name {
+  color:#000000 !important; 
+  text-decoration: underline;
+} 
+
+/*非噗主對話框顏色*/
+.list .td_cnt .text_holder {
+  background:#FFF;
+}
+/*非噗主對話框尾巴顏色*/
+.list .plurk_cnt .text_holder::after {
+  border-left-color: #FFF;
+}
+
+/*噗主對話框顏色*/
+.list .highlight_owner .td_cnt .text_holder {
+  background:#FFFFFF;
+}
+/*噗主對話框尾巴顏色*/
+.list .highlight_owner .plurk_cnt .text_holder::after {
+  border-left-color: transparent; /*這一行不要動*/
+  border-right-color: #FFFFFF; /*改這邊*/
+}
+
