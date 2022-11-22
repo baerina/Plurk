@@ -3,7 +3,6 @@
 
  var filter_switch = false;
 
-    // Your code here...
     $("#updater").append('<div id="filter" class="item" style=""><a><i class="pif-message-new"></i><span id="noti_np_text">R18 mask</span><span id="filter_message" class="unread_generic">OFF</span></a></div>');
     $("#filter").click(()=>{
         filter_switch = !filter_switch;
