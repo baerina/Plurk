@@ -1,0 +1,87 @@
+/*THEME: BLUE*/
+
+/*BACKGROUND*/
+body {
+font-family: monospace;
+font-size: 19px;
+padding: 5px 15px 5pt 5pt;
+fon-color: #FFFFFF;
+backgroung-image: "PROVIDE SA";
+}
+
+/*REMOVE THE BOTTOM LINE*/
+.day_bg .div_inner {opacity:0.0;}
+}
+#bottom_line {
+background: transparent !important;
+border: 0px;
+}
+.bottom_start, .bottom_end {
+background: #000000 !important;
+color: #ffffff;
+font-weight: 300;
+font-family: 'Helvetica' !important;
+font-size :10px;
+opacity: 0.0}
+}
+
+/*ARROW BOTH SIDE*/
+.cmp_arrow_right
+{
+background: url(http://i614.photobucket.com/albums/tt230/m66660000/_ic/gray_light/arrow_right_alt1_32x32.png);
+width:32px; height:32px;
+}
+.cmp_arrow_left
+{
+background: url(http://i614.photobucket.com/albums/tt230/m66660000/_ic/gray_light/arrow_left_alt1_32x32.png);
+width:32px; height:32px;
+}.cmp_arrow_right,
+.cmp_arrow_left,
+.cmp_back_to_today
+{
+opacity: 0.1; zoom:1;
+transition: opacity 1.5s ease;
+}
+.cmp_arrow_right:hover,
+.cmp_arrow_left:hover,
+.cmp_back_to_today:hover
+{
+opacity: 0.9; zoom:1;
+transition: opacity 1.5s ease;
+}
+
+.browse_button .cmp_arrow_right:before,
+.browse_button .cmp_arrow_left:before,
+.browse_button .cmp_back_to_today:before
+{ opacity: 0 !important; }
+
+div.cmp_back_to_today.pif-arrow-left, 
+div.cmp_back_to_today.pif-arrow-right 
+{
+font-size: 10px !important;
+color:#898989 !important;
+background: none !important;
+margin-left: -10px !important;
+}
+div.cmp_back_to_today.pif-arrow-left::before,
+div.cmp_back_to_today.pif-arrow-right::before
+{
+font-size: 10px !important;
+color: #bbb !important;
+}
+
+/*REMOVE THE FOOTER*/
+#footer {
+  padding: 0;
+  position: fixed;
+  bottom: 0px;
+  right: 10px;
+  height: 30px;
+  width: auto;
+  font-size: 1px;
+}
+#footer .copyright {
+  display: none;
+}
+
+/**/
